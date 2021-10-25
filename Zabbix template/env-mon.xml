@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>5.0</version>
+    <date>2021-10-25T09:01:47Z</date>
+    <groups>
+        <group>
+            <name>Environment monitoring</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Env-Mon</template>
+            <name>Env-Mon</name>
+            <description>Template to monitor the temperature log file on the end device</description>
+            <groups>
+                <group>
+                    <name>Environment monitoring</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Environment monitoring</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Monitor humidity log</name>
+                    <type>ZABBIX_ACTIVE</type>
+                    <key>log[/var/log/humidity,,,,skip,,]</key>
+                    <delay>1s</delay>
+                    <trends>0</trends>
+                    <value_type>LOG</value_type>
+                    <applications>
+                        <application>
+                            <name>Environment monitoring</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Monitor temperature log</name>
+                    <type>ZABBIX_ACTIVE</type>
+                    <key>log[/var/log/temp,,,,skip,,]</key>
+                    <delay>1s</delay>
+                    <trends>0</trends>
+                    <value_type>LOG</value_type>
+                    <applications>
+                        <application>
+                            <name>Environment monitoring</name>
+                        </application>
+                    </applications>
+                    <triggers>
+                        <trigger>
+                            <expression>{last()}&gt;80</expression>
+                            <name>High Ambient Humidity</name>
+                            <priority>HIGH</priority>
+                            <manual_close>YES</manual_close>
+                        </trigger>
+                        <trigger>
+                            <expression>{last()}&gt;30</expression>
+                            <name>High Ambient Temperature</name>
+                            <priority>HIGH</priority>
+                            <manual_close>YES</manual_close>
+                        </trigger>
+                        <trigger>
+                            <expression>{nodata(60)}=1</expression>
+                            <name>No new data about the ambient humidity</name>
+                            <priority>WARNING</priority>
+                            <description>This trigger will go off if there is no new log data from the sensor within 60 seconds</description>
+                        </trigger>
+                        <trigger>
+                            <expression>{nodata(60)}=1</expression>
+                            <name>No new data about the ambient temperature</name>
+                            <priority>WARNING</priority>
+                            <description>This trigger will go off if there is no new log data from the sensor within 60 seconds</description>
+                            <manual_close>YES</manual_close>
+                        </trigger>
+                    </triggers>
+                </item>
+            </items>
+        </template>
+    </templates>
+</zabbix_export>
