@@ -35,6 +35,15 @@ If you already have you senor wired up, you can run the enviropi.py with\
 
 ## DHT22 temperature-humidity sensor
 
+Pin being used are: \
+\
+Top row\
+pin 3 - for ground \
+\
+Bottem row\
+pin 1 3v3 - for power \
+pin 4 GPIO - for data \
+[Layout](https://commons.wikimedia.org/wiki/File:Raspberry_Pi_GPIO.svg)\
 https://learn.adafruit.com/dht \
 [Adafruit CircuitPython Module Install](https://learn.adafruit.com/dht/dht-circuitpython-code) \
 [Adafruit-DHT 1.4.0](https://pypi.org/project/Adafruit-DHT/) \
