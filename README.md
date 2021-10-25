@@ -38,7 +38,7 @@ If you already have you senor wired up, you can run the enviropi.py with\
 https://learn.adafruit.com/dht \
 [Adafruit CircuitPython Module Install](https://learn.adafruit.com/dht/dht-circuitpython-code) \
 [Adafruit-DHT 1.4.0](https://pypi.org/project/Adafruit-DHT/) \
-[ref code](https://newbedev.com/python-dht22-on-raspberry-pi-4-code-example) \
+[ref code](https://newbedev.com/python-dht22-on-raspberry-pi-4-code-example)
 
 ## Ansible
 
