@@ -4,7 +4,7 @@ To monitor temperature and humidity in Zabbix from a Raspberry Pi.
 
 ## Documentation
 
-Download and install the [Raspberry Pi Imager](https://www.raspberrypi.com/software/)\
+Download and install the [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
 
 Select and write your distro. Im using [Ubuntu](https://ubuntu.com/) Server 20.04 LTS\
 Log into your Pi with SSH or however you are accessing it\
@@ -43,6 +43,7 @@ pin 3 - for ground \
 Bottem row\
 pin 1 3v3 - for power \
 pin 4 GPIO - for data \
+\
 [Layout](https://commons.wikimedia.org/wiki/File:Raspberry_Pi_GPIO.svg)\
 https://learn.adafruit.com/dht \
 [Adafruit CircuitPython Module Install](https://learn.adafruit.com/dht/dht-circuitpython-code) \
