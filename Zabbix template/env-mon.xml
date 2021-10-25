@@ -39,7 +39,7 @@
                 <item>
                     <name>Monitor temperature log</name>
                     <type>ZABBIX_ACTIVE</type>
-                    <key>log[/var/log/temp,,,,skip,,]</key>
+                    <key>log[/var/log/temp.log,,,,skip,,]</key>
                     <delay>1s</delay>
                     <trends>0</trends>
                     <value_type>LOG</value_type>
