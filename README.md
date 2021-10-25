@@ -21,24 +21,24 @@ Install pip
 `sudo python3 -m pip install --upgrade pip setuptools wheel`
 
 
-Will need to install schedule
+Will need to install schedule\
 `sudo pip install schedule`
 
-And install the Adafruit DHT module
+And install the Adafruit DHT module\
 `sudo pip3 install Adafruit_DHT`
 
-Make the enviropi.py script executable
+Make the enviropi.py script executable\
 `chmod +x enviropi.py`
 
-If you alread have you senor wired up, you can run the enviropi.py with
+If you already have you senor wired up, you can run the enviropi.py with\
 `sudo python3 enviropi.py`
 
 ## DHT22 temperature-humidity sensor
 
-https://learn.adafruit.com/dht
-[Adafruit CircuitPython Module Install](https://learn.adafruit.com/dht/dht-circuitpython-code)
-[Adafruit-DHT 1.4.0](https://pypi.org/project/Adafruit-DHT/)
-[ref code](https://newbedev.com/python-dht22-on-raspberry-pi-4-code-example)
+https://learn.adafruit.com/dht \
+[Adafruit CircuitPython Module Install](https://learn.adafruit.com/dht/dht-circuitpython-code) \
+[Adafruit-DHT 1.4.0](https://pypi.org/project/Adafruit-DHT/) \
+[ref code](https://newbedev.com/python-dht22-on-raspberry-pi-4-code-example) \
 
 ## Ansible
 
