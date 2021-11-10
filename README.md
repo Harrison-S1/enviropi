@@ -55,7 +55,7 @@ https://learn.adafruit.com/dht \
 playbook coming.
 
  
- ## Zabbix set up                                                                                                                                      
+## Zabbix set up                                                                                                                                      
                                                                                                                                                        
  You will need a running Zabbix server.                                                                                                                
  Guide [here](https://www.zabbix.com/download?zabbix=5.0&os_distribution=ubuntu&os_version=20.04_focal&db=mysql&ws=apache) for a standard server set up.
