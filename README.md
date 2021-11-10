@@ -55,13 +55,28 @@ https://learn.adafruit.com/dht \
 playbook coming.
 
  
-## Zabbix set up
-
-You will need a running Zabbix server.
-Guide [here](https://www.zabbix.com/download?zabbix=5.0&os_distribution=ubuntu&os_version=20.04_focal&db=mysql&ws=apache) for a standard server set up.\
-Will look to add a docker image later on.\ 
-Once you have your Zabbix server you can then import the template created. There are two log files that are being monitored, one for the temperature and one for humidity.\
-There are four tiggers, two for each log. If the temperate is more than X value then your tigger is set off and the same for the hunidity.   
+ ## Zabbix set up                                                                                                                                      
+                                                                                                                                                       
+ You will need a running Zabbix server.                                                                                                                
+ Guide [here](https://www.zabbix.com/download?zabbix=5.0&os_distribution=ubuntu&os_version=20.04_focal&db=mysql&ws=apache) for a standard server set up. \
+ Will look to add a docker image later on. \                                                                                                           
+ Once you have your Zabbix server you can then import the template created. There are two log files that are being monitored, one for the temperature and one for humidity. \
+ There are four tiggers, two for each log. If the temperate is more than X value then your tigger is set off and the same for the hunidity.            
+                                                                                                                                                       
+##Zabbix agent                                                                                                                                        
+                                                                                                                                                       
+I've found the agent 4.13 thats in the repo as of (10/11/2021) to be buggy; where the data is being pull into Zabbix, but is not being displayed. Install version 5 of the agent fixed thi
+                                                                                                                                                      
+Remove the old one with:\                                                                                                                             
+`sudo apt remove zabbix-agent`                                                                                                                        
+`sudo apt purge zabbix-agent`                                                                                                                         
+                                                                                                                                                        
+Zabbix 5.0 LTS version (supported until May, 2025)\                                                                                                   
+                                                                                                                                                        
+`wget https://repo.zabbix.com/zabbix/5.0/ubuntu-arm64/pool/main/z/zabbix-release/zabbix-release_5.0-1%2Bubuntu20.04_all.deb`                          
+`sudo dpkg -i zabbix-release_5.0-1+ubuntu20.04_all.deb`                                                                                               
+`sudo apt update`                                                                                                                                     
+`sudo apt install zabbix-agent`   
 
 
 ## Parts list
