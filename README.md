@@ -71,7 +71,7 @@ Remove the old one with:\
 `sudo apt remove zabbix-agent`                                                                                                                        
 `sudo apt purge zabbix-agent`                                                                                                                         
                                                                                                                                                         
-Zabbix 5.0 LTS version (supported until May, 2025)\                                                                                                   
+Zabbix 5.0 LTS version (supported until May, 2025) \                                                                                                   
                                                                                                                                                         
 `wget https://repo.zabbix.com/zabbix/5.0/ubuntu-arm64/pool/main/z/zabbix-release/zabbix-release_5.0-1%2Bubuntu20.04_all.deb`                          
 `sudo dpkg -i zabbix-release_5.0-1+ubuntu20.04_all.deb`                                                                                               
