@@ -67,11 +67,11 @@ playbook coming.
                                                                                                                                                        
 I've found the agent 4.13 thats in the repo as of (10/11/2021) to be buggy; where the data is being pull into Zabbix, but is not being displayed. Install version 5 of the agent fixed thi
                                                                                                                                                       
-Remove the old one with:\                                                                                                                             
+Remove the old one with:                                                                                                                            
 `sudo apt remove zabbix-agent`                                                                                                                        
 `sudo apt purge zabbix-agent`                                                                                                                         
                                                                                                                                                         
-Zabbix 5.0 LTS version (supported until May, 2025) \                                                                                                   
+Zabbix 5.0 LTS version (supported until May, 2025)                                                                                                
                                                                                                                                                         
 `wget https://repo.zabbix.com/zabbix/5.0/ubuntu-arm64/pool/main/z/zabbix-release/zabbix-release_5.0-1%2Bubuntu20.04_all.deb`                          
 `sudo dpkg -i zabbix-release_5.0-1+ubuntu20.04_all.deb`                                                                                               
