@@ -62,7 +62,7 @@ Will look to add a docker image later on.
 Once you have your Zabbix server you can then import the template created. There are two log files that are being monitored, one for the temperature and one for humidity.
 There are four tiggers, two for each log. If the temperate is more than X value then your tigger is set off and the same for the hunidity.            
                                                                                                                                                        
-##Zabbix agent                                                                                                                                        
+## Zabbix agent                                                                                                                                        
                                                                                                                                                        
 I've found the agent 4.13 thats in the repo as of (10/11/2021) to be buggy; where the data is being pull into Zabbix, but is not being displayed. Install version 5 of the agent fixed thi
                                                                                                                                                       
