@@ -58,9 +58,9 @@ playbook coming.
  ## Zabbix set up                                                                                                                                      
                                                                                                                                                        
  You will need a running Zabbix server.                                                                                                                
- Guide [here](https://www.zabbix.com/download?zabbix=5.0&os_distribution=ubuntu&os_version=20.04_focal&db=mysql&ws=apache) for a standard server set up. \
- Will look to add a docker image later on. \                                                                                                           
- Once you have your Zabbix server you can then import the template created. There are two log files that are being monitored, one for the temperature and one for humidity. \
+ Guide [here](https://www.zabbix.com/download?zabbix=5.0&os_distribution=ubuntu&os_version=20.04_focal&db=mysql&ws=apache) for a standard server set up.
+ Will look to add a docker image later on.                                                                                                        
+ Once you have your Zabbix server you can then import the template created. There are two log files that are being monitored, one for the temperature and one for humidity.
  There are four tiggers, two for each log. If the temperate is more than X value then your tigger is set off and the same for the hunidity.            
                                                                                                                                                        
 ##Zabbix agent                                                                                                                                        
