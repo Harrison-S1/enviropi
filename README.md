@@ -76,6 +76,10 @@ Zabbix 5.0 LTS version (supported until May, 2025)
 `sudo dpkg -i zabbix-release_5.0-1+ubuntu20.04_all.deb`                                                                                               
 `sudo apt update`                                                                                                                                     
 `sudo apt install zabbix-agent`   
+<<<<<<< HEAD
+=======
+
+>>>>>>> 05b99604ed7ac6ab5c4286ca5b8b53b710dda27a
 
 ## Parts list
 
